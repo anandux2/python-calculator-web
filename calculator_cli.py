@@ -32,7 +32,6 @@ def get_number(prompt):
 
 def main():
     while True:
-        # clear_screen()
         print("\n" + "="*30)
         print("   PREMIUM CLI CALCULATOR   ")
         print("="*30)

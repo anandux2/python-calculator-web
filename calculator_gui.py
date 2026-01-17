@@ -15,7 +15,7 @@ class ModernCalculator:
         self.setup_ui()
 
     def setup_ui(self):
-        # Display Screen
+       
         display_frame = tk.Frame(self.root, width=400, height=100, bd=0, highlightbackground="#333", highlightthickness=1, bg="#1e1e1e")
         display_frame.pack(side=tk.TOP, fill=tk.BOTH, expand=True)
 
@@ -24,7 +24,7 @@ class ModernCalculator:
         display_frame.grid_rowconfigure(0, weight=1)
         display_frame.grid_columnconfigure(0, weight=1)
 
-        # Buttons Frame
+       
         btns_frame = tk.Frame(self.root, width=400, height=500, bg="#1e1e1e")
         btns_frame.pack(fill=tk.BOTH, expand=True)
 
@@ -41,9 +41,8 @@ class ModernCalculator:
         for button in buttons:
             action = lambda x=button: self.on_button_click(x)
             
-            # Special Styling for operators and equals
             if button == "=":
-                bg_color = "#4CAF50" # Green
+                bg_color = "#4CAF50" 
                 fg_color = "white"
             elif button in ['C', '(', ')', '/', '*', '-', '+', '%']:
                 bg_color = "#333333"
